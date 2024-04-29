@@ -9,7 +9,7 @@ class MeuSliderApp(App):
         layout=BoxLayout(orientation='vertical', padding=20)
         slider=Slider(min=0, max=100, value=50, step=1)
         slider.bind(value=self.atualizar_label)
-        self.label=Label(text="Valor Slider:{}".format(int(slider.value)))
+        self.label=Label(text="Valor Slider:{}".format((slider.value)))
 
         layout.add_widget(slider)
         layout.add_widget(self.label)
