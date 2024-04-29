@@ -1,0 +1,10 @@
+from kivy.app import App
+from kivy.uix.imagem import Image, AsyncImage
+
+class MinhaApp(App):
+    def build(self):
+
+        return AsyncImage(source='https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww2.recife.pe.gov.br%2Fservico%2Fcidade-1&psig=AOvVaw0YWPYaXGHKAuUZfEtxo3WZ&ust=1714496931078000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCPjLzYD154UDFQAAAAAdAAAAABAE')
+    
+    if __name__ == "__main__":
+        MinhaApp().run()
